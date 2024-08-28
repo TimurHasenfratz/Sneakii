@@ -96,7 +96,7 @@ function Slid({ addToCart }) {
       <Slider {...settings}>
         {slidesData.map((slide) => (
           <div key={slide.id} className="carousel-slide relative">
-            <img src={slide.src} alt={slide.alt} className="carousel-image" />
+            <img loading="lazy" src={slide.src} alt={slide.alt} className="carousel-image" />
             <button 
               className="absolute p-2 top-1 right-0"
               onClick={() => handleLike(slide.id)}
