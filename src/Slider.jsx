@@ -43,7 +43,7 @@ function Slid({ addToCart }) {
   const slidesData = [
     {
       id: 1,
-      src: "SneakerWhite.webp",
+      src: "SneakerWhite.png",
       alt: "White Air Force 1",
       text: "White Air Force 1",
       price: "50$",
@@ -51,7 +51,7 @@ function Slid({ addToCart }) {
     },
     {
       id: 2,
-      src: "SneakerBlue-.webp",
+      src: "SneakerBlue.png",
       alt: "Blue Air Jordan",
       text: "Blue Air Jordan",
       price: "60$",
@@ -59,7 +59,7 @@ function Slid({ addToCart }) {
     },
     {
       id: 3,
-      src: "Sneaker-Blue2.webp",
+      src: "Sneaker-Blue2.png",
       alt: "Blue Air Jordan",
       text: "Blue Air Jordan",
       price: "55$",
@@ -67,7 +67,7 @@ function Slid({ addToCart }) {
     },
     {
       id: 4,
-      src: "SneakerOrangeWhite.webp",
+      src: "SneakerOrangeWhite.png",
       alt: "White Orange Air Jordan",
       text: "White Orange Air Jordan",
       price: "65$",
@@ -75,7 +75,7 @@ function Slid({ addToCart }) {
     },
     {
       id: 5,
-      src: "SneakerCustomWhite.webp",
+      src: "SneakerCustomWhite.png",
       alt: "Custom Nike",
       text: "Custom Nike",
       price: "70$",
@@ -83,7 +83,7 @@ function Slid({ addToCart }) {
     },
     {
       id: 6,
-      src: "Sneaker-White-Custom.webp",
+      src: "Sneaker-White-Custom.png",
       alt: "Custom Nike",
       text: "Custom Nike",
       price: "75$",
@@ -97,7 +97,7 @@ function Slid({ addToCart }) {
         {slidesData.map((slide) => (
           <div key={slide.id} className="carousel-slide relative">
         
-            <img loading="lazy" src={slide.src} alt={slide.alt} className="carousel-image" />
+            <img loading="lazy" src={slide.src} alt={slide.alt} className="carousel-image  " />
             <button 
               className="absolute p-2 top-1 right-0"
               onClick={() => handleLike(slide.id)}
@@ -108,7 +108,7 @@ function Slid({ addToCart }) {
                 fill={likedSlides[slide.id] ? "red" : "none"}
                 stroke={likedSlides[slide.id] ? "red" : "currentColor"}
                 strokeWidth="2"
-                className="w-6 h-6 hover:fill-red-600 center-elements "
+                className="w-6 h-6 hover:fill-red-600 center-elements  bg-teal-100 rounded-lg "
               >
                 <path
                   strokeLinecap="round"

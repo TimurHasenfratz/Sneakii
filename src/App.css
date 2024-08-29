@@ -113,6 +113,7 @@ main{
   transform: scale(1.1) translateY(1rem);
   transition:all 0.5s ease;
   margin:auto;
+  
 }
 
 .slick-slide:not(.slick-center) .carousel-image {
@@ -145,8 +146,11 @@ main{
 
 .slick-center .carousel-image {
   transform: scale(1.1) translateY(1rem);
-  transition: all 0.5s ease;
+  transition: all 0.8s ease;
   margin: auto;
+  filter:drop-shadow(0px -60px 80px #A1D6B2);
+  box-shadow: 0 10px 15px -5px rgb(2, 21, 38);
+ 
 }
 
 .slick-slide:not(.slick-center) .carousel-image {
