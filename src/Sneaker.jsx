@@ -97,11 +97,12 @@ function Sneaker({ addToCart }) {
 
   return (
     <>
-    <div className="sm:text-2xl text-xl  text-center my-32 text-slate-50 grid sm:flex gap-10 mb-[20rem] w-fit m-auto  p-4 h-[10rem] justify-center ">
+    <div className="sm:text-2xl text-xl sneaker-header  text-center my-32 text-slate-50 grid sm:flex gap-10 mb-[20rem] w-fit m-auto  p-4 h-[10rem] justify-center ">
       <img src="SneakerHeader.png" className="sm:w-[20rem] w-[10rem]  sneak m-auto" />
       <div className=" gap-10 grid m-auto text-center w-full backdrop-blur-xl">
-      <h1 className=" ">Find a shoe that fits your lifestyle</h1>
-    <h2>Explore our collection</h2>
+      <h1>Explore our collection and</h1>
+      <h2 className=" ">Find a shoe that fits your lifestyle </h2>
+    
       </div>
    
     </div>

@@ -96,18 +96,19 @@ function Slid({ addToCart }) {
       <Slider {...settings}>
         {slidesData.map((slide) => (
           <div key={slide.id} className="carousel-slide relative">
+        
             <img loading="lazy" src={slide.src} alt={slide.alt} className="carousel-image" />
             <button 
               className="absolute p-2 top-1 right-0"
               onClick={() => handleLike(slide.id)}
             >
-              <svg
+              <svg 
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill={likedSlides[slide.id] ? "red" : "none"}
                 stroke={likedSlides[slide.id] ? "red" : "currentColor"}
                 strokeWidth="2"
-                className="w-6 h-6"
+                className="w-6 h-6 hover:fill-red-600 center-elements "
               >
                 <path
                   strokeLinecap="round"
@@ -125,7 +126,7 @@ function Slid({ addToCart }) {
                 Add To Cart
               </button>
             </div>
-            <div className="carousel-text-container w-full bg-teal-500 mt-20 grid">
+            <div className="carousel-text-container  w-full bg-teal-500 mt-20 grid">
               <p className="carousel-text bg-teal-800 w-full">{slide.text}</p>
               <ul>
                 <div className="flex gap-2 p-0 w-full m-auto justify-center">

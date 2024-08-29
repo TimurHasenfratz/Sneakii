@@ -15,12 +15,12 @@ function Navbar() {
 
 
   <nav className="top-0">
-    <ul className=' grid  '>
+    <ul className='grid'>
       <li className=" m-auto flex  ">
       <button onClick={toggleMenu}><img src="menu.png" className="w-10 bg-slate-50 rounded-lg p-2 hover:bg-transparent hover:border-2 border-teal-200" /></button>
       </li>
       {openMenu ? (
-      <li className='mt-2 sm:flex grid gap-2 backdrop-blur-xl w-fit m-auto p-4 rounded-lg  '>
+      <li className='mt-2 sm:flex grid shadow-2xl   gap-2 backdrop-blur-xl w-fit m-auto p-4   '>
         <Link to="/">Home</Link>
         <Link to="Sneaker">Sneaker</Link>
         <Link to="/Login">Login</Link>
