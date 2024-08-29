@@ -116,7 +116,7 @@ function Slid({ addToCart }) {
                 />
               </svg>
             </button>
-            <div className="absolute center-elements">
+            <div className="absolute center-elements bottom-[5.5rem]">
               <p className="carousel-price">{slide.price}</p>
               <button
                 className="carousel-button"

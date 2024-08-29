@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Slid from './Slid';
 import './App.css';
+import { useCart } from './CartContext';
+import ShoppingCart from './ShoppingCart'; // Nehme an, du hast diese Komponente
 
 function Home() {
   const [cart, setCart] = useState([]);

@@ -12,6 +12,9 @@
   justify-content:center;
   display:block;
 }
+html{
+  font-family:"Abel";
+}
 
 .carousel-slide {
   text-align: center;
@@ -19,7 +22,12 @@
   padding: 0 15px;
   box-sizing: border-box; 
 }
-
+main{
+  max-width:100vw;
+}
+.sneak{
+  filter:drop-shadow(-10px 20px 20px #48CFCB);
+}
 .carousel-image {
   width: 100%;
   justify-content:center;
@@ -28,7 +36,7 @@
   object-fit: cover;
   border-radius: 10px;
   transition: transform 0.3s ease, opacity 0.3s ease;
-
+  transform:translateY(70px);
 }
 
 .carousel-text-container {
@@ -130,7 +138,7 @@
 .carousel-image {
   width: 100%;
   margin: 0;
-  
+
   height: 45vh;
   object-fit: cover;
   border-radius: 10px;
@@ -161,9 +169,7 @@
   
  
 }
-.herz{
-  fill:red!important;
-}
+
 
 .slick-center .center-elements {
   display: flex; 
@@ -187,9 +193,7 @@
   transition: background-color 0.3s ease;
 }
 
-/* App.css */
 
-/* App.css */
 
 .cart-icon-container {
   position: fixed;
@@ -274,7 +278,7 @@ body{
   font-family: 'Abel', sans-serif;
   animation: 0.2s ease-in-out 0s 1 appear;
   font-weight: bold;
-  overflow-y:scroll;
+
   font-display: swap!important;
 }
 .Sneaker{
@@ -395,4 +399,9 @@ padding:1rem;
   padding:1rem;
   border-radius:1rem;
   background-color:#10439F;
+}
+nav{
+  position:fixed;
+  width:100%;
+  z-index:1000;
 }
