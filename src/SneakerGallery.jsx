@@ -18,8 +18,8 @@ function SneakerGallery({ sneakers, addToCart }) {
   };
 
   return (
-    <div className='my-20 sm:mb-[10rem] mb-[22rem] text-center text-2xl text-slate-900 Sneaker '>
-      <h2 className='text-4xl my-10 text-teal-50 w-fit m-auto'>{"Sneaker"}</h2>
+    <div className='my-20 sm:mb-[10rem] mb-[22rem] text-center sm:text-2xl text-md text-slate-900 Sneaker '>
+      <h2 className='sm:text-4xl my-10 text-teal-50 w-fit m-auto'>{"Sneaker"}</h2>
       <div className='flex w-fit m-auto border-2 gap-4 rounded-xl bg-[#E4F1FF] p-1'>
         <select className='w-fit m-auto bg-transparent text-center hover:bg-teal-100 rounded-lg transition-all ease-in-out border-none' value={filterType} onChange={(e) => setFilterType(e.target.value)}>
           <option value="price">Price</option>
@@ -72,7 +72,7 @@ function SneakerGallery({ sneakers, addToCart }) {
             <div className='bg-[#EEF7FF] text-slate-900 m-auto text-xl grid'>
               <h3 className='w-full mt-4'>{sneaker.name}</h3>
               <br />
-              <p className='w-full my-2 text-3xl'>{sneaker.price}$</p>
+              <p className='w-full my-2 sm:text-3xl'>{sneaker.price}$</p>
             </div>
             <div className='flex w-full m-auto'>
               <select name='Size' className='m-auto w-full bg-[#EEF7FF] border-y-4 border-teal-900 p-2 hover:cursor-pointer transition-all ease-in-out'>
@@ -86,7 +86,7 @@ function SneakerGallery({ sneakers, addToCart }) {
                 ))}
               </select>
             </div>
-            <button onClick={() => addToCart(sneaker)} className='hover:text-slate-50 rounded-b-lg p-2 text-3xl m-auto w-full transition-all ease-in-out hover:bg-[#053B50] bg-slate-50'>
+            <button onClick={() => addToCart(sneaker)} className='hover:text-slate-50 rounded-b-lg p-2 sm:text-3xl m-auto w-full transition-all ease-in-out hover:bg-[#053B50] bg-slate-50'>
               Add to Cart
             </button>
           </div>

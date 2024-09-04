@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Slider from './Slider';
 import './App.css';
 import { useCart } from './CartContext';
-import ShoppingCart from './ShoppingCart'; // Nehme an, du hast diese Komponente
+import ShoppingCart from './ShoppingCart';
 
 function Home() {
   const [cart, setCart] = useState([]);

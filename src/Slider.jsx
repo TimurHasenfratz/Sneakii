@@ -108,7 +108,7 @@ function Slid({ addToCart }) {
                 fill={likedSlides[slide.id] ? "red" : "none"}
                 stroke={likedSlides[slide.id] ? "red" : "currentColor"}
                 strokeWidth="2"
-                className="w-6 h-6 hover:fill-red-600 center-elements  bg-teal-100 rounded-lg "
+                className="w-6 h-6 hover:fill-red-600 center-elements   rounded-lg "
               >
                 <path
                   strokeLinecap="round"
